@@ -110,8 +110,8 @@
       <file leaf-file-name="TestStepsDefs.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestSteps/TestStepsDefs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10948905">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.8321168">
+              <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -836,7 +836,7 @@
       <workItem from="1459392344573" duration="8278000" />
       <workItem from="1459906626262" duration="99000" />
       <workItem from="1459906756704" duration="1103000" />
-      <workItem from="1460342102072" duration="2138000" />
+      <workItem from="1460342102072" duration="2457000" />
     </task>
     <servers />
   </component>
@@ -873,7 +873,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55932000" />
+    <option name="totallyTimeSpent" value="56251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="805" extended-state="0" />
@@ -1365,8 +1365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestSteps/TestStepsDefs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10948905">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.8321168">
+          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
           <folding />
         </state>
       </provider>
