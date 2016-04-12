@@ -1,0 +1,181 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Sign-in functional testing",
+        "description": "",
+        "id": "cucumber-bdd-test-scenario;sign-in-functional-testing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10590254492,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to the certain page",
+            "match": {
+              "location": "TestStepsDefs.iNavigateToTheCertainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 816680736,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click the sign up button",
+            "match": {
+              "location": "TestStepsDefs.iClickTheSignUpButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2305379874,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill in the account and password",
+            "match": {
+              "location": "TestStepsDefs.iFillInTheAccountAndPassword(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Fields",
+                  "Value"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "E-mail",
+                  "15802881436"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Password",
+                  "19890104dwk"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50044403,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I go to a welcome page",
+            "match": {
+              "location": "TestStepsDefs.iGoToAWelcomePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@sign-in"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Purchase product functional testing",
+        "description": "",
+        "id": "cucumber-bdd-test-scenario;purchase-product-functional-testing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1982768280,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am at homepage",
+            "match": {
+              "location": "TestStepsDefs.iAmAtHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1693062708,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I search for a certain product \"软件测试\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "软件测试",
+                  "offset": 32
+                }
+              ],
+              "location": "TestStepsDefs.iSearchForACertainProduct(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8796625304,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click the product I want to purchase",
+            "match": {
+              "location": "TestStepsDefs.iClickTheProductIWantToPurchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29211138,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Page shows that the product has been added to your shopping cart",
+            "match": {
+              "location": "TestStepsDefs.pageShowsThatTheProductHasBeenAddedToYourShoppingCart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2279788862,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Delete the product in shopping cart",
+            "match": {
+              "location": "TestStepsDefs.deleteTheProductInShoppingCart()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@buy"
+          }
+        ]
+      }
+    ],
+    "name": "cucumber BDD test scenario",
+    "description": "",
+    "id": "cucumber-bdd-test-scenario",
+    "keyword": "Feature",
+    "uri": "testcase.feature"
+  }
+]
