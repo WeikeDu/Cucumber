@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         format = {"pretty", "json:target/json/output.json", "html:target/html/"},
         features = "src/test/java/feature",
-        tags = {"@sign-in,@buy"}
+        tags = {"@sign-in,@add-address,@buy"}
 )
 public class TestRunner {
 }

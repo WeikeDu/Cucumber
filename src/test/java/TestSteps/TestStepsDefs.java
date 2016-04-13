@@ -1,7 +1,6 @@
 package TestSteps;
 
-import PageObject.ProductPage;
-import PageObject.SigninPage;
+import PageObject.*;
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
@@ -11,11 +10,14 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import PageObject.HomePage;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -24,9 +26,12 @@ import static org.junit.Assert.assertThat;
 public class TestStepsDefs extends WebDriverConfig {
 
     WebDriver driver = getDriver();
+    AbstractPage abstracpage = new AbstractPage(driver);
     HomePage homepage = new HomePage(driver);
     SigninPage signinpage = new SigninPage(driver);
     ProductPage productpage = new ProductPage(driver);
+    MyAccountPage myaccountpage = new MyAccountPage(driver);
+    ManageAddressPage manageaddresspage = new ManageAddressPage(driver);
 
 
     @Given("^I navigate to the certain page$")
@@ -70,7 +75,7 @@ public class TestStepsDefs extends WebDriverConfig {
     @And("^I click the product I want to purchase$")
     public void iClickTheProductIWantToPurchase() throws Throwable {
         productpage.SelectFirstMachProduct();
-        productpage.SwithToNewWindow();
+        abstracpage.SwithToNewWindow();
         productpage.ClickAddToCartButton();
     }
 
@@ -81,8 +86,36 @@ public class TestStepsDefs extends WebDriverConfig {
 
     @And("^Delete the product in shopping cart$")
     public void deleteTheProductInShoppingCart() throws Throwable {
-        driver.findElement(By.id("hlb-view-cart")).click();
-        driver.findElement(By.cssSelector("[value='删除']")).click();
+        abstracpage.DeleteProduct();
+    }
+
+    @Given("^I am at my account page$")
+    public void iAmAtMyAccountPage() throws Throwable {
+        driver.navigate().to(AbstractPage.baseURL +"/gp/css/homepage.html/ref=nav__topnav_ya");
+    }
+
+    @When("^I click add a new address$")
+    public void iClickAddANewAddress() throws Throwable {
+        myaccountpage.ClickAddAddress();
+    }
+
+    @And("^I fill in the detail about the address info$")
+    public void iFillInTheDetailAboutTheAddressInfo() throws Throwable {
+        manageaddresspage.FillinFullName();
+        manageaddresspage.FillinDetailAddress();
+        manageaddresspage.FillinContacInfot();
+    }
+
+    @Then("^I click save my address$")
+    public void iClickSaveMyAddress() throws Throwable {
+        manageaddresspage.SaveMyAddress();
+        assertEquals(driver.findElement(By.className("myab-alert-bar-content-title")).getText(),"已成功添加您的地址");
+
+    }
+
+    @And("^Delete the address$")
+    public void deleteTheAddress() throws Throwable {
+        abstracpage.DeleteAddress();
     }
 }
 

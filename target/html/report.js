@@ -67,28 +67,28 @@ formatter.match({
   "location": "TestStepsDefs.iNavigateToTheCertainPage()"
 });
 formatter.result({
-  "duration": 10590254492,
+  "duration": 8917692660,
   "status": "passed"
 });
 formatter.match({
   "location": "TestStepsDefs.iClickTheSignUpButton()"
 });
 formatter.result({
-  "duration": 816680736,
+  "duration": 18623776942,
   "status": "passed"
 });
 formatter.match({
   "location": "TestStepsDefs.iFillInTheAccountAndPassword(DataTable)"
 });
 formatter.result({
-  "duration": 2305379874,
+  "duration": 8920135636,
   "status": "passed"
 });
 formatter.match({
   "location": "TestStepsDefs.iGoToAWelcomePage()"
 });
 formatter.result({
-  "duration": 50044403,
+  "duration": 55584286,
   "status": "passed"
 });
 formatter.scenario({
@@ -134,7 +134,7 @@ formatter.match({
   "location": "TestStepsDefs.iAmAtHomepage()"
 });
 formatter.result({
-  "duration": 1982768280,
+  "duration": 2123700780,
   "status": "passed"
 });
 formatter.match({
@@ -147,28 +147,102 @@ formatter.match({
   "location": "TestStepsDefs.iSearchForACertainProduct(String)"
 });
 formatter.result({
-  "duration": 1693062708,
+  "duration": 2262824440,
   "status": "passed"
 });
 formatter.match({
   "location": "TestStepsDefs.iClickTheProductIWantToPurchase()"
 });
 formatter.result({
-  "duration": 8796625304,
+  "duration": 2881458884,
   "status": "passed"
 });
 formatter.match({
   "location": "TestStepsDefs.pageShowsThatTheProductHasBeenAddedToYourShoppingCart()"
 });
 formatter.result({
-  "duration": 29211138,
+  "duration": 71317246,
   "status": "passed"
 });
 formatter.match({
   "location": "TestStepsDefs.deleteTheProductInShoppingCart()"
 });
 formatter.result({
-  "duration": 2279788862,
+  "duration": 1892295825,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 23,
+  "name": "Add address functional testing",
+  "description": "",
+  "id": "cucumber-bdd-test-scenario;add-address-functional-testing",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 22,
+      "name": "@add-address"
+    }
+  ]
+});
+formatter.step({
+  "line": 25,
+  "name": "I am at my account page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 26,
+  "name": "I click add a new address",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 27,
+  "name": "I fill in the detail about the address info",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "I click save my address",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 29,
+  "name": "Delete the address",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "TestStepsDefs.iAmAtMyAccountPage()"
+});
+formatter.result({
+  "duration": 635733836,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestStepsDefs.iClickAddANewAddress()"
+});
+formatter.result({
+  "duration": 172768538,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestStepsDefs.iFillInTheDetailAboutTheAddressInfo()"
+});
+formatter.result({
+  "duration": 2907037765,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestStepsDefs.iClickSaveMyAddress()"
+});
+formatter.result({
+  "duration": 942526849,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TestStepsDefs.deleteTheAddress()"
+});
+formatter.result({
+  "duration": 2249396110,
   "status": "passed"
 });
 });

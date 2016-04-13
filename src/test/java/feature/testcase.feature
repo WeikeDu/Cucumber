@@ -19,3 +19,11 @@ Feature: cucumber BDD test scenario
     Then Page shows that the product has been added to your shopping cart
     And Delete the product in shopping cart
 
+  @add-address
+  Scenario: Add address functional testing
+
+    Given I am at my account page
+    When I click add a new address
+    And I fill in the detail about the address info
+    Then I click save my address
+    And Delete the address

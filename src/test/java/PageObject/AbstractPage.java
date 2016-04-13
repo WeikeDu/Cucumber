@@ -1,5 +1,6 @@
 package PageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -8,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 public class AbstractPage {
 
     protected WebDriver driver;
+    public static String baseURL="https://www.amazon.cn/";
 
     public AbstractPage (WebDriver driver) {
 
@@ -16,15 +18,8 @@ public class AbstractPage {
 
     public HomePage NavigateToWeb() {
 
-        driver.navigate().to("https://www.amazon.cn/");
+        driver.navigate().to(baseURL);
         return new HomePage(driver);
-    }
-
-    public void CloseAllBrowser() {
-        driver.quit();
-    }
-    public void CloseBrowser() {
-        driver.close();
     }
 
     public void SwithToNewWindow() {
@@ -32,5 +27,15 @@ public class AbstractPage {
         for(String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle);
         }
+    }
+
+    public void DeleteProduct() {
+        driver.findElement(By.id("hlb-view-cart")).click();
+        driver.findElement(By.cssSelector("[value='删除']")).click();
+    }
+
+    public void DeleteAddress() {
+        driver.findElement(By.linkText("删除")).click();
+        driver.findElement(By.linkText("确认")).click();
     }
 }
