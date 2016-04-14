@@ -1,6 +1,10 @@
 package TestSteps;
 
 import PageObject.AbstractPage;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -39,5 +43,4 @@ public class WebDriverConfig {
             }
         }
     }
-
 }
