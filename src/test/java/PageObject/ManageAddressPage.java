@@ -45,5 +45,6 @@ public class ManageAddressPage extends AbstractPage {
     public  ManageAddressPage SaveMyAddress() {
         driver.findElement(By.id("myab_newAddressButton")).click();
         return new ManageAddressPage (driver);
+        
     }
 }
